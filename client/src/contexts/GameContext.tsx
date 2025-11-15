@@ -3,11 +3,9 @@ import {
   GameState,
   Player,
   Question,
-  GameEvent,
   QuestionResult,
   PlayerScore,
-  SCORING_CONFIG,
-  Category
+  SCORING_CONFIG
 } from '../types/game';
 import { GameChannel } from '../utils/supabase';
 
@@ -339,7 +337,7 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
     setPlayers(prev => prev.map(p => ({ ...p, currentAnswer: undefined })));
   }, []);
 
-  const handleAnswerSubmitted = useCallback((playerId: string) => {
+  const handleAnswerSubmitted = useCallback((_playerId: string) => {
     // Just visual feedback - actual answer stored locally
   }, []);
 
@@ -366,7 +364,7 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
     );
   }, [currentQuestion]);
 
-  const handleGameEnded = useCallback((finalScores: PlayerScore[]) => {
+  const handleGameEnded = useCallback((_finalScores: PlayerScore[]) => {
     setGameStatus('finished');
   }, []);
 

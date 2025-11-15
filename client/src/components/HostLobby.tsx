@@ -1,6 +1,6 @@
 import React from 'react';
 import { useGame } from '../contexts/GameContext';
-import { CATEGORY_COLORS } from '../types/game';
+import { CATEGORY_COLORS, Question } from '../types/game';
 import triviaQuestions from '../../../questions/trivia-questions.json';
 
 export function HostLobby() {
@@ -8,7 +8,7 @@ export function HostLobby() {
 
   const handleStartGame = () => {
     // Shuffle and select questions
-    const shuffled = [...triviaQuestions].sort(() => Math.random() - 0.5);
+    const shuffled = [...(triviaQuestions as Question[])].sort(() => Math.random() - 0.5);
     startGame(shuffled.slice(0, 12)); // Use 12 questions
   };
 
