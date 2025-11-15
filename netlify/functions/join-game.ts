@@ -1,9 +1,5 @@
 import { Handler } from '@netlify/functions';
 
-// Shared game store (same as create-game)
-// In production, use Redis or a database
-const games = new Map<string, any>();
-
 export const handler: Handler = async (event) => {
   const headers = {
     'Access-Control-Allow-Origin': '*',
@@ -35,53 +31,8 @@ export const handler: Handler = async (event) => {
       };
     }
 
-    const game = games.get(gameCode.toUpperCase());
-
-    if (!game) {
-      return {
-        statusCode: 404,
-        headers,
-        body: JSON.stringify({ error: 'Game not found' })
-      };
-    }
-
-    if (game.gameStatus !== 'waiting' && game.gameStatus !== 'playing') {
-      return {
-        statusCode: 400,
-        headers,
-        body: JSON.stringify({ error: 'Game has already started or ended' })
-      };
-    }
-
-    // Check if nickname is already taken
-    const existingPlayer = Object.values(game.players).find(
-      (p: any) => p.nickname === nickname && p.id !== playerId
-    );
-
-    if (existingPlayer) {
-      return {
-        statusCode: 400,
-        headers,
-        body: JSON.stringify({ error: 'Nickname already taken' })
-      };
-    }
-
-    // Add or reconnect player
-    const isReconnect = !!game.players[playerId];
-
-    if (isReconnect) {
-      game.players[playerId].isConnected = true;
-    } else {
-      game.players[playerId] = {
-        id: playerId,
-        nickname,
-        score: 0,
-        wedges: [],
-        isConnected: true,
-        joinedAt: Date.now()
-      };
-    }
-
+    // Game validation happens client-side via Supabase
+    // Just acknowledge the join request
     return {
       statusCode: 200,
       headers,
@@ -89,8 +40,8 @@ export const handler: Handler = async (event) => {
         success: true,
         gameCode,
         playerId,
-        isReconnect,
-        gameStatus: game.gameStatus
+        isReconnect: false,
+        gameStatus: 'waiting'
       })
     };
   } catch (error) {
