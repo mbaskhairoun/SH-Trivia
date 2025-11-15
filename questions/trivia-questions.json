@@ -1,0 +1,194 @@
+[
+  {
+    "id": "geo_001",
+    "category": "GEOGRAPHY",
+    "question": "What is the capital of Australia?",
+    "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+    "correctAnswer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": "ent_001",
+    "category": "ENTERTAINMENT",
+    "question": "Who directed the movie 'Inception'?",
+    "options": ["Steven Spielberg", "Christopher Nolan", "Quentin Tarantino", "Martin Scorsese"],
+    "correctAnswer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "hist_001",
+    "category": "HISTORY",
+    "question": "In which year did World War II end?",
+    "options": ["1943", "1944", "1945", "1946"],
+    "correctAnswer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "art_001",
+    "category": "ARTS_LITERATURE",
+    "question": "Who wrote 'Romeo and Juliet'?",
+    "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
+    "correctAnswer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "sci_001",
+    "category": "SCIENCE_NATURE",
+    "question": "What is the chemical symbol for gold?",
+    "options": ["Go", "Gd", "Au", "Ag"],
+    "correctAnswer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": "sport_001",
+    "category": "SPORTS_LEISURE",
+    "question": "How many players are on a basketball team on the court?",
+    "options": ["4", "5", "6", "7"],
+    "correctAnswer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "geo_002",
+    "category": "GEOGRAPHY",
+    "question": "Which river is the longest in the world?",
+    "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": "ent_002",
+    "category": "ENTERTAINMENT",
+    "question": "Which band released the album 'Abbey Road'?",
+    "options": ["The Rolling Stones", "The Beatles", "Led Zeppelin", "Pink Floyd"],
+    "correctAnswer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "hist_002",
+    "category": "HISTORY",
+    "question": "Who was the first President of the United States?",
+    "options": ["Thomas Jefferson", "John Adams", "George Washington", "Benjamin Franklin"],
+    "correctAnswer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "art_002",
+    "category": "ARTS_LITERATURE",
+    "question": "Which artist painted the Mona Lisa?",
+    "options": ["Michelangelo", "Leonardo da Vinci", "Raphael", "Donatello"],
+    "correctAnswer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "sci_002",
+    "category": "SCIENCE_NATURE",
+    "question": "What planet is known as the Red Planet?",
+    "options": ["Venus", "Jupiter", "Mars", "Saturn"],
+    "correctAnswer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "sport_002",
+    "category": "SPORTS_LEISURE",
+    "question": "In which sport would you perform a 'slam dunk'?",
+    "options": ["Volleyball", "Basketball", "Tennis", "Baseball"],
+    "correctAnswer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "geo_003",
+    "category": "GEOGRAPHY",
+    "question": "What is the smallest country in the world?",
+    "options": ["Monaco", "San Marino", "Vatican City", "Liechtenstein"],
+    "correctAnswer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": "ent_003",
+    "category": "ENTERTAINMENT",
+    "question": "Which actor played Iron Man in the Marvel Cinematic Universe?",
+    "options": ["Chris Evans", "Chris Hemsworth", "Robert Downey Jr.", "Mark Ruffalo"],
+    "correctAnswer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "hist_003",
+    "category": "HISTORY",
+    "question": "The Great Wall of China was built to protect against invasions from which direction?",
+    "options": ["South", "North", "East", "West"],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": "art_003",
+    "category": "ARTS_LITERATURE",
+    "question": "Who wrote '1984'?",
+    "options": ["Aldous Huxley", "George Orwell", "Ray Bradbury", "H.G. Wells"],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": "sci_003",
+    "category": "SCIENCE_NATURE",
+    "question": "What is the speed of light in a vacuum?",
+    "options": ["299,792 km/s", "150,000 km/s", "500,000 km/s", "1,000,000 km/s"],
+    "correctAnswer": 0,
+    "difficulty": "hard"
+  },
+  {
+    "id": "sport_003",
+    "category": "SPORTS_LEISURE",
+    "question": "How many Grand Slam tournaments are there in tennis each year?",
+    "options": ["2", "3", "4", "5"],
+    "correctAnswer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": "geo_004",
+    "category": "GEOGRAPHY",
+    "question": "Which ocean is the largest?",
+    "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
+    "correctAnswer": 3,
+    "difficulty": "easy"
+  },
+  {
+    "id": "ent_004",
+    "category": "ENTERTAINMENT",
+    "question": "What year did the first Star Wars movie come out?",
+    "options": ["1975", "1977", "1979", "1981"],
+    "correctAnswer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": "hist_004",
+    "category": "HISTORY",
+    "question": "Who was the British Prime Minister during most of World War II?",
+    "options": ["Neville Chamberlain", "Winston Churchill", "Clement Attlee", "Anthony Eden"],
+    "correctAnswer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": "art_004",
+    "category": "ARTS_LITERATURE",
+    "question": "Which famous painting features a woman with no eyebrows?",
+    "options": ["Girl with a Pearl Earring", "The Birth of Venus", "Mona Lisa", "American Gothic"],
+    "correctAnswer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": "sci_004",
+    "category": "SCIENCE_NATURE",
+    "question": "What is the hardest natural substance on Earth?",
+    "options": ["Gold", "Iron", "Diamond", "Platinum"],
+    "correctAnswer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "sport_004",
+    "category": "SPORTS_LEISURE",
+    "question": "Which country has won the most FIFA World Cups?",
+    "options": ["Germany", "Argentina", "Brazil", "Italy"],
+    "correctAnswer": 2,
+    "difficulty": "medium"
+  }
+]
